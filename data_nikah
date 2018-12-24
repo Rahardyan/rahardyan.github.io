@@ -1,0 +1,34 @@
+<?php 
+//ARRAY
+$data = array( 
+ array('1','Dedi','Kawin'),
+ array('2','Edo','Belum Kawin'),
+ array('3','Ica','Belum Kawin'),
+ array('4','Fatma','Kawin')
+);
+$jml=count($data);
+
+for ($i=0; $i <$jml ; $i++) { 
+	$s=$data[$i][2];
+	$a=$data[$i][0];
+	if ($s=="Kawin") {
+		if ($a%2==0) {
+			echo $data[$i][0].",".$data[$i][1].",".$data[$i][2].",Genap<br>";
+		}else{
+			echo $data[$i][0].",".$data[$i][1].",".$data[$i][2].",Ganjil<br>";
+		}
+	} 
+}
+
+for ($i=0; $i <$jml ; $i++) { 
+	$s=$data[$i][2];
+	$a=$data[$i][0];
+	if ($s=="Belum Kawin") {
+		if ($a%2==0) {
+			echo $data[$i][0].",".$data[$i][1].",".$data[$i][2].",Genap<br>";
+		}else{
+			echo $data[$i][0].",".$data[$i][1].",".$data[$i][2].",Ganjil<br>";
+		}
+	} 
+}
+ ?>
